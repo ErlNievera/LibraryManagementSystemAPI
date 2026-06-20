@@ -1,6 +1,7 @@
 ﻿using LibraryManagementSystem.Data;
 using LibraryManagementSystem.DTOs.Reports;
 using LibraryManagementSystem.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystem.Services.Implementations
 {
