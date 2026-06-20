@@ -2,7 +2,6 @@
 using LibraryManagementSystem.DTOs.Auth;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Repositories.Interfaces;
-using LibraryManagementSystem.Ropositories.Interfaces;
 using LibraryManagementSystem.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 
