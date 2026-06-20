@@ -2,7 +2,7 @@
 
 namespace LibraryManagementSystem.Services.Interfaces
 {
-    public class ICategoryService
+    public interface ICategoryService
     {
         Task<List<CategoryDto>> GetAllAsync();
         Task<CategoryDto?> GetByIdAsync(int id);

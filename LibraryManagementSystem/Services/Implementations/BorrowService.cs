@@ -1,4 +1,6 @@
-﻿using LibraryManagementSystem.DTOs.Borrow;
+﻿using AutoMapper;
+using LibraryAPI.Services.Interfaces;
+using LibraryManagementSystem.DTOs.Borrow;
 using LibraryManagementSystem.Helpers;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Repositories.Interfaces;

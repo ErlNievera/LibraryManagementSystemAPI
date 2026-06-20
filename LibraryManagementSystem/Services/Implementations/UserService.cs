@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.DTOs.Users;
+﻿using AutoMapper;
+using LibraryManagementSystem.DTOs.Users;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Repositories.Interfaces;
 using LibraryManagementSystem.Services.Interfaces;

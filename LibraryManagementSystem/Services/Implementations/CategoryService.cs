@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.DTOs.Categories;
+﻿using AutoMapper;
+using LibraryManagementSystem.DTOs.Categories;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Repositories.Interfaces;
 using LibraryManagementSystem.Services.Interfaces;

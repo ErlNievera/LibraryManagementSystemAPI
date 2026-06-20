@@ -2,7 +2,7 @@
 
 namespace LibraryManagementSystem.Services.Interfaces
 {
-    public class IUserService
+    public interface IUserService
     {
         Task<List<UserDto>> GetAllUsersAsync();
         Task<UserDto?> GetByIdAsync(int id);

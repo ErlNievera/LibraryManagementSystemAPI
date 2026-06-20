@@ -12,4 +12,4 @@ namespace LibraryManagementSystem.Repositories.Interfaces
         Task<bool> HasActiveBorrowsAsync(int bookId);
     }
 }
-}
+

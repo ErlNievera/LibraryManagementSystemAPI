@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.DTOs.Books;
+﻿using AutoMapper;
+using LibraryManagementSystem.DTOs.Books;
 using LibraryManagementSystem.DTOs.Borrow;
 using LibraryManagementSystem.DTOs.Categories;
 using LibraryManagementSystem.DTOs.Users;

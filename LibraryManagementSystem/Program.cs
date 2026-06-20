@@ -1,15 +1,14 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using LibraryAPI.Helpers;
 using LibraryAPI.Middleware;
-using LibraryAPI.Repositories.Implementations;
 using LibraryAPI.Services.Implementations;
 using LibraryAPI.Services.Interfaces;
-using LibraryAPI.Validators;
 using LibraryManagementSystem.Data;
+using LibraryManagementSystem.Helpers;
 using LibraryManagementSystem.Models;
+using LibraryManagementSystem.Repositories.Implementation;
 using LibraryManagementSystem.Repositories.Interfaces;
-using LibraryManagementSystem.Ropositories.Interfaces;
+using LibraryManagementSystem.Services.Implementations;
 using LibraryManagementSystem.Services.Interfaces;
 using LibraryManagementSystem.Validators;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -18,7 +17,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -101,7 +99,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization();
 
-// CORS — allow all origins in dev so port mismatches don't block anything
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -118,7 +116,7 @@ builder.Services.AddEndpointsApiExplorer();
 // Swagger with JWT support
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Library Management API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Alexandria Library API", Version = "v1" });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",

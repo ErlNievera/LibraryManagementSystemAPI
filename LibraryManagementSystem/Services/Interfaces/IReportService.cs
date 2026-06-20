@@ -2,7 +2,7 @@
 
 namespace LibraryManagementSystem.Services.Interfaces
 {
-    public class IReportService
+    public interface IReportService
     {
         Task<DashboardStatsDto> GetDashboardStatsAsync();
         Task<List<BookReportDto>> GetAvailableBooksReportAsync();
