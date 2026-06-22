@@ -116,7 +116,7 @@ builder.Services.AddEndpointsApiExplorer();
 // Swagger with JWT support
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Alexandria Library API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "UST-Angelicum Library API", Version = "v1" });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
